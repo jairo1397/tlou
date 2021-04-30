@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: black;
+}
+
+.menu {
+    width: 100%;
+    display: flex;
+    /* border: white 1px solid; */
+    height: 3rem;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu a {
+    color: white;
+    font-size: 2rem;
+    /* border: white 1px solid; */
+    text-decoration: none;
+    margin: 20px;
+}
