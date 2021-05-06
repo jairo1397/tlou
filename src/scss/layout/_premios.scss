@@ -1,0 +1,33 @@
+#premios {
+    p {
+        color: $blanco;
+        width: 70%;
+        text-align: center;
+    }
+    img {
+        width: 50%;
+    }
+    .golden-jostick {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+        article {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: space-around;
+            align-items: center;
+            align-content: stretch;
+            h4 {
+                text-align: center;
+                color: $blanco;
+                font-size: 2rem;
+                height: 4rem;
+            }
+            img {
+                width: 100%;
+            }
+        }
+    }
+}

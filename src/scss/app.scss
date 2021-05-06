@@ -1,0 +1,47 @@
+@import "base/normalize";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700;900&display=swap');
+@import "base/variables";
+@import "base/mixins";
+@import "base/globales";
+@import "layout/header";
+@import "layout/home";
+@import "layout/trailer";
+@import "layout/historia";
+@import "layout/premios";
+@import "layout/personajes";
+@import "layout/galeria";
+.container {
+    background-color: transparent;
+    font-family: $fuentePrincipal;
+}
+
+section {
+    // border: 3px solid coral;
+    position: relative;
+    height: 100%;
+    margin-left: 8rem;
+    opacity: 1;
+    transition: all ease-in .5s;
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+    @include telefono {
+        margin-left: 0;
+    }
+    h1 {
+        text-align: center;
+        font-size: 5rem;
+        background: linear-gradient(white, black);
+        -webkit-background-clip: text;
+        color: transparent;
+        position: relative;
+        font-weight: $black;
+        @include telefono {
+            font-size: 3rem;
+        }
+    }
+}
+
+
+/* Styles applied on trigger */

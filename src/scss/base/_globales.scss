@@ -1,0 +1,34 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    background-color: $negro;
+    scroll-behavior: smooth;
+    body {
+        font-family: $fuentePrincipal;
+        font-size: 1.6rem;
+        background-color: $gris;
+        &.fijar-body {
+            overflow: hidden;
+        }
+        .flecha {
+            z-index: 500;
+            display: none;
+            @include telefono {
+                display: block;
+                position: fixed;
+                top: 90%;
+                right: 5%;
+            }
+            a {
+                font-size: 30px;
+                color: $blanco
+            }
+        }
+    }
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}

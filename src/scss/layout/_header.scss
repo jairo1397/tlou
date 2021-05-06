@@ -1,0 +1,114 @@
+:after {
+    content: "";
+}
+
+nav {
+    float: left;
+    position: fixed;
+    height: 100%;
+    left: -4rem;
+    background: $negro;
+    z-index: 100;
+    @include telefono {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 10%;
+    }
+    ul {
+        list-style: none;
+        text-align: center;
+        @include telefono {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding-left: 2rem;
+            #icono {
+                display: none;
+            }
+        }
+        li {
+            position: relative;
+            width: 8rem;
+            cursor: pointer;
+            background: $negro;
+            text-transform: uppercase;
+            transition: all .4s ease-out;
+            @include telefono {
+                width: 6rem;
+            }
+            &:after {
+                @include telefono {
+                    top: -20px;
+                    left: -1rem;
+                    transform: none;
+                }
+                position: absolute;
+                font-size: 1rem;
+                background: transparent;
+                color: rgb(255, 255, 255);
+                top: 0;
+                left: 7rem;
+                width: 8rem;
+                height: 100%;
+                opacity: .5;
+                transform: perspective(400px) rotateY(90deg);
+                transform-origin: 0 100%;
+                transition: all .4s ease-out;
+            }
+            &:hover {
+                transform: translateX(-70px);
+                @include telefono {
+                    transform: none;
+                }
+            }
+            &:hover:after {
+                opacity: 1;
+                transform: perspective(400px) rotateX(0deg) scale(1);
+                @include telefono {
+                    transform: none;
+                }
+            }
+            div {
+                position: relative;
+                i {
+                    font-size: 20px;
+                    color: white;
+                }
+            }
+        }
+        #child1:after {
+            content: "Inicio";
+            line-height: 120px;
+        }
+        #child2:after {
+            content: "Historia";
+            line-height: 120px;
+        }
+        #child3:after {
+            content: "Premios";
+            line-height: 120px;
+        }
+        #child4:after {
+            content: "Personajes";
+            line-height: 120px;
+        }
+        #child5:after {
+            content: "Galeria";
+            line-height: 120px;
+        }
+        #child6:after {
+            content: "Trailer";
+            line-height: 120px;
+        }
+        li>div {
+            padding: 38px 0;
+            background: transparent;
+            @include telefono {
+                padding: 0;
+            }
+        }
+    }
+}

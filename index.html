@@ -1,33 +1,340 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TLOU-Jairo</title>
-    <link rel="stylesheet" href="./css/normalize.css" />
-    <link rel="stylesheet" href="./css/index.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <title>TLOU</title>
+    <script src="https://kit.fontawesome.com/9a357e20ff.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="build/css/app.css" />
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
 </head>
 
 <body>
-    <nav class="menu">
-        <a href="#">Inicio</a>
-        <a href="./html/historia.html">Historia</a>
-        <a href="./html/personajes.html">Personajes</a>
-        <a href="./html/imagenes.html">Imagenes</a>
+    <ul class="flecha">
+        <a href="#"><i class="fas fa-arrow-circle-up"></i></a>
+    </ul>
+    <nav id="nav">
+        <ul>
+            <a href="#first" id="icono">
+                <li id="child1">
+                    <div class="home-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                </li>
+            </a>
+            <a href="#timeline">
+                <li id="child2">
+                    <div class="about-icon">
+                        <i class="fas fa-file-signature"></i>
+                    </div>
+                </li>
+            </a>
+            <a href="#premios">
+                <li id="child3">
+                    <div class="work-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                </li>
+            </a>
+
+            <a href="#personajes">
+                <li id="child4">
+                    <div class="mail-icon">
+                        <i class="fas fa-male"></i>
+                    </div>
+                </li>
+            </a>
+
+            <a href="#galeria">
+                <li id="child5">
+                    <div class="mail-icon">
+                        <i class="fas fa-images"></i>
+                    </div>
+                </li>
+            </a>
+
+            <a href="#trailer">
+                <li id="child6">
+                    <div class="mail-icon">
+                        <i class="fas fa-film"></i>
+                    </div>
+                </li>
+            </a>
+        </ul>
     </nav>
-    <div class="titulo">
-        <h1>The Last Of Us Part II</h1>
-        <p>
-            Experimenta los crecientes conflictos morales que Ellie enfrenta en su incesante búsqueda de venganza. El ciclo de violencia que la rodea cambiará tus nociones de justicia, del bien y el mal, y de quién es el héroe y el villano.
-        </p>
+
+    <div class="container">
+        <section id="first" class="inicio">
+            <div class="video">
+                <div class="overlay">
+                    <h1>The Last of Us Part II</h1>
+                    <p>
+                        Experimenta los crecientes conflictos morales que Ellie enfrenta en su incesante búsqueda de venganza. El ciclo de violencia que la rodea cambiará tus nociones de justicia, del bien y el mal, y de quién es el héroe y el villano.
+                    </p>
+                </div>
+                <video id="tlou-video" src="./src/videos/corto-tlou.mp4" loop="true" autoplay="true" poster="./assets/imagenes/imagen-video.jpg"></video>
+            </div>
+        </section>
+        <section id="timeline" class="historia">
+            <div class="titulo-historia">
+                <h1>Historia de The Last Of Us Part II</h1>
+            </div>
+        </section>
+        <section class="timeline">
+            <div class="entries">
+                <div class="entry">
+                    <div class="title big">Prólogo</div>
+                    <div class="body">
+                        <p>
+                            En las afueras de Jackson (Wyoming), Joel relata los eventos de Salt Lake City, el escape de St. Mary's Hospital y la mentira que le dijo a Ellie para protegerla de la verdad; a su hermano Tommy.
+                        </p>
+                        <p>
+                            De regreso en Jackson, Joel visita a Ellie y le regala una guitarra, cumpliendo su promesa de enseñarle a tocar dicho instrumento.
+                        </p>
+                    </div>
+                </div>
+                <div class="entry">
+                    <div class="title big">Jackson</div>
+                    <div class="body">
+                        <p>
+                            Cinco años después, Joel y Ellie se han asentado en una comunidad en Jackson. Allí, Ellie tiene un grupo de amigos e incluso un primer amor. Pero, un día la tranquilidad se desvanece y la joven inicia un viaje con dos objetivos: Vengar la muerte de un
+                            ser querido y la tranquilidad que le arrebataron.
+                        </p>
+                    </div>
+                </div>
+                <div class="entry">
+                    <div class="title ">Seattle <span>Dia 1</span></div>
+                    <div class="body">
+                        <p>
+                            Tommy se dirige a Seattle para cazar a Abby, y Ellie y Dina lo siguen. Después de escapar de una emboscada de WLF (Washington Liberation Front), Ellie revela su inmunidad a Dina, quien a su vez revela que está embarazada. Ambas buscan refugio en un teatro
+                            abandonado.
+                        </p>
+                    </div>
+                </div>
+                <div class="entry">
+                    <div class="title">Seattle <span>Dia 2</div>
+                    <div class="body">
+                        <p>
+                            Ellie sale en busca de Tommy por su cuenta, y se encuentra con Jesse, el exnovio de Dina, quien los siguió a Seattle. Mientras busca a la amiga de Abby, Nora Harris, Ellie se encuentra con los Serafitas (también llamados Scars), un culto enfrascado en una batalla con la WLF por el control de Seattle. 
+                        </p>
+                        <p>Ellie rastrea a Nora y la tortura para obtener información sobre la ubicación de Abby, lo que traumatiza a Ellie.</p>
+                    </div>
+                </div>
+                <div class="entry">
+                    <div class="title">Seattle <span>Dia 3</div>
+                    <div class="body">
+                        <p>
+                            Al día siguiente, Jesse y Ellie parten en busca de Abby. Ambos se separan cuando se enteran que Tommy puede estar en peligro inminente. Jesse parte a ayudar a Tommy, Ellie continúa la búsqueda de Abby. Siguiendo la información proporcionada por Nora, Ellie llega a un acuario donde mata a dos miembros más del grupo de Abby: la embarazada Mel, y su novio Owen Moore. Jesse y Tommy se encuentran con una traumatizada Ellie y la llevan de vuelta al teatro.
+                        </p>
+                        <p>
+                            Un flashback revela que, años antes, Ellie viajó al hospital Firefly en Salt Lake City y se enteró de la verdad. Devastada, cortó los lazos con Joel. En el presente, el grupo de Ellie es emboscado por Abby, quien mata a Jesse y retiene a Tommy como rehén.
+                        </p>
+                    </div>
+                </div>
+                <div class="entry">
+                    <div class="title big">Salt Lake City</div>
+                    <div class="body">
+                        <p>
+                            Gracias a un flashback nos enteramos de la razón por la cual Abby ha asesinado a Joel. Cuatro años antes de la historia del juego, en el St. Mary's Hospital, Joel asesina al cirujano encargado de realizar la operación en Ellie que proporcionaría la cura contra el cordyceps. Jerry, el cirujano, es asesinado a sangre fría, dejando a Abby devastada.
+                        </p>
+                    </div>
+                </div>
+                <div class="entry">
+                    <div class="title ">Seattle <span>Dia 1</div>
+                    <div class="body">
+                        <p>Tres días antes de los eventos en el teatro, Abby se entera de que Owen, su exnovio, ha desaparecido mientras investigaba la actividad de los serafitas. Abby busca a Owen y es capturada por el culto para ser ahorcada</p>
+                        <p>Es rescatada por Yara y Lev, hermanos serafitas que han sido tildados de apóstatas después de que Lev desafió las tradiciones. Aunque Yara está gravemente herida, Abby los deja para encontrar a Owen quien, desilusionado con la guerra, planea navegar a Santa Bárbara, California, donde las luciérnagas pueden estar reagrupando.</p>
+                    </div>
+                </div>
+                <div class="entry">
+                    <div class="title ">Seattle <span>Dia 2</div>
+                    <div class="body">
+                        <p>Abby rescata a Yara y Lev, y viaja por Seattle con Lev para recuperar suministros médicos del hospital WLF para que Mel pueda amputar el brazo de Yara.</p>
+                    </div>
+                </div>
+                <div class="entry">
+                    <div class="title ">Seattle <span>Dia 3</div>
+                    <div class="body">
+                        <p>Después de la cirugía, Lev se escapa para convencer a su devota madre de que abandone el culto Serafita, lo que obliga a Abby y Yara a perseguirlo. Lo encuentran en uno de los asentamientos serafita, donde Lev accidentalmente mató a su madre en defensa propia. El trío huye cuando la WLF comienza un asalto contra los serafitas. Abby traiciona al WLF para salvar a Lev, y Yara se sacrifica para permitir que Abby y Lev escapen.</p>
+                        <p>Lev y Abby regresan al acuario, ahí encuentran a Owen y Mel muertos y un mapa dejado por Ellie que conduce a su escondite. Abby dispara a Tommy, lo que lo perjudica, y pelea con Ellie y Dina, dominándolas. Ante la insistencia de Lev, Abby las perdona a ambas y les dice que se vayan de Seattle.</p>
+                    </div>
+                </div>
+                <div class="entry">
+                    <div class="title big">La Granja</div>
+                    <div class="body">
+                        <p>Un año después, Ellie y Dina viven en una granja, criando al hijo de Dina y Jesse, aunque Ellie sufre de estrés postraumático. Cuando Tommy llega con información sobre el paradero de Abby, Ellie se va a buscarla, a pesar de las súplicas de Dina de quedarse.</p>
+                    </div>
+                </div>
+                <div class="entry">
+                    <div class="title big">Santa Bárbara</div>
+                    <div class="body">
+                        <p>Abby y Lev llegan a Santa Bárbara en busca de las luciérnagas, pero se enteran de que se están reagrupando en la isla Catalina, California, pero son capturados, torturados y dejados morir por los esclavistas Rattlers. </p>
+                        <p>Ellie llega a Santa Bárbara y rescata a la pareja. Amenazando con matar a Lev, Ellie obliga a Abby a luchar contra ella, durante la cual Abby le muerde dos dedos a Ellie. Ellie la domina, pero cambia de opinión y la deja vivir. Abby y Lev navegan hacia las luciérnagas.</p>
+                    </div>
+                </div>
+                <div class="entry">
+                    <div class="title big">Epílogo</div>
+                    <div class="body">
+                        <p>Ellie regresa a la granja. La encuentra vacía, Dina se ha ido. Quedan en el hogar sólo las cosas de Ellie, entre ellas la guitarra que Joel le regaló. Ellie se sienta e intenta tocar el instrumento sin éxito.</p>
+                        <p>Rememora la última charla que tuvo con él, después del baile. Ella reclama a Joel sobre el incidente de St. Mary's Hospital, argumentando que era su destino morir ahí y hacer algo bueno por la humanidad. Joel responde diciendo que, de tener la oportunidad, volvería hacerlo de nuevo. Ellie externa a no creerse capaz de perdonar a Joel, pero le gustaría intentarlo.</p>
+                        <p>De vuelta al presente, Ellie deja la guitarra en la granja y procede a abandonar el lugar, presumiblemente habiendo encontrado un cierre.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="premios" class="premios">
+            <h1>Premios</h1>
+
+            <p>El éxito de Naughty Dog no ha parado de crecer desde el estreno de la secuela, The Last of Us Parte 2, algo que se ve en los premios recibidos.</p>
+            <img src="./build/img/premios-tlou.jpg" alt="premios-the last of us">
+            <p>Según la página web gameawards.net, The Last of Us Parte 2 es el primer juego en la historia de la industria en recibir 300 premios GOTY o Juego del Año. Eso, como quizá alguno de vosotros se esté preguntando, le hace ostentar el título de juego más galardonado/premiado en la historia.</p>
+            <p>En 2017, The Last of Us Part II fue nombrado el juego más esperado del año por PlayStation Blog; juego más buscado en los Golden Joystick Awards; y el juego más esperado en The Game Awards. En 2018, recibió el premio juego más anticipado en los Gamers Choice Awards y fue nominado para el juego más deseado en los Golden Joystick Awards además de recibir menciones especiales en gráficos y sonido en los Game Critics Awards en julio de ese mismo año. En los Game Awards 2020 obtuvo los siguientes premios:</p>
+            <img src="./build/img/game-awards.jpg" alt="premios game awards">
+            <p>En los Golden Joystick Awards 2020, que sirven como antesala para esos grandes premios tan deseados, la maravillosa superproducción de Naughty Dog se ha hecho nada menos que con 6 galardones que la sitúan como lo que es: una obra maestra de PlayStation y del mundo de los videojuegos.
+
+            </p>
+            <div class="golden-jostick">
+                <article>
+                    <h4>Juego del año</h4>
+                    <img src="./build/img/GOTY-1.webp" alt="">
+                </article>
+                <article>
+                    <h4>Juego del año en play station </h4>
+                    <img src="./build/img/PlayStation-GOTY.webp" alt="">
+                </article>
+                <article>
+                    <h4>Mejor sonido</h4>
+                    <img src="./build/img/Best-Audio.webp" alt="">
+                </article>
+                <article>
+                    <h4>Mejor narrativa</h4>
+                    <img src="./build/img/Best-Storytelling.webp" alt="">
+                </article>
+                <article>
+                    <h4>Mejor diseño visual</h4>
+                    <img src="./build/img/Best-visual-Design.webp" alt="">
+                </article>
+                <article>
+                    <h4>Estudio del año (Naughty Dog)</h4>
+                    <img src="./build/img/Studio-of-the-year.webp" alt="">
+                </article>
+                
+            </div>
+        </section>
+
+        <section id="personajes" class="personajes">
+            <h1>Personajes</h1>
+            <div class="scene">
+                <div class="card">
+                  <div class="card__face card__face--front">
+                    <img src="./build/img/ellie.webp" /><p>Ellie</p>
+                  </div>
+                  <div class="card__face card__face--back">
+                    <p>Ellie nació en algún momento del 2019, 6 años después de la expansión de la pandemia causada por el hongo cordyceps. Creció en una opresiva zona de cuarentena en Boston, Massachusetts, sin conocimiento de cómo se vivía antes del brote. La madre de Ellie,
+                        Anna, murió cuando tan solo tenía un día de vida. Tiempo después, Ellie recibe su navaja y una carta que dice que confíe en Marlene (líder de las Luciérnagas) para que cuide de ella.</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card__face card__face--front">
+                    <img src="./build/img/abby-anderson.webp" /><p>Abby</p>
+                  </div>
+                  <div class="card__face card__face--back">
+                    <p>Abigail "Abby" Anderson es la falsa protagonista de The Last of Us Part II. Un miembro de las Luciérnagas roto por la tragedia cuando Joel Miller asesinó a su padre Jerry Anderson,Abby hizo su misión de vengar la muerte de Jerry. [9] Sin embargo,
+                        es sólo después de su venganza que se embarca en un viaje con su compañero Lev y redescubre el propósito en su vida.</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card__face card__face--front">
+                    <img src="./build/img/joel.webp" /><p>Joel</p>
+                  </div>
+                  <div class="card__face card__face--back">
+                    <p>Joel Miller es el protagonista jugable de The Last of Us,y un personaje secundario en The Last of Us: Left Behind y The Last of Us Part II,en el que es brevemente jugable. Joel fue un sobreviviente en la América post-apocalíptica que ha sido devastada
+                        por la infección cerebral de cordyceps,que ha diezmado al 60% de la humanidad en todo el mundo.</p>
+                  </div>
+                </div>
+                <div class="card">
+                    <div class="card__face card__face--front">
+                      <img src="./build/img/lev.webp" /><p>Lev</p>
+                    </div>
+                    <div class="card__face card__face--back">
+                      <p>Lev es un personaje secundario en The Last of Us Parte II. Es el hermano menor de Yara y un ex miembro de los Serafitas. Lev es interpretado por Ian Alexander. Durante la historia de Abby Anderson, Lev funciona como deuteragonista, formando él y su hermana un vínculo con Abby.</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card__face card__face--front">
+                      <img src="./build/img/tommy.webp" /><p>Tommy</p>
+                    </div>
+                    <div class="card__face card__face--back">
+                      <p>Tommy Miller es un personaje secundario en The Last of Us, un personaje secundario en la historia de Ellie y un antagonista en la perspectiva de Abby en The Last of Us Parte II . Él es el hermano menor de Joel, el tío paterno de Sarah, el esposo de María y un ex miembro de las luciérnagas. La Voz y movimiento es interpretado por Jeffrey Pierce.</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card__face card__face--front">
+                      <img src="./build/img/dina.webp" /><p>Dina</p>
+                    </div>
+                    <div class="card__face card__face--back">
+                      <p>Dina es la deuteragonista de la historia de Ellieen The Last of Us Part II. Ella es la pareja de Ellie y uno de los personajes que la ayudan en su búsqueda de venganza.</p>
+                    </div>
+                  </div>
+              </div>
+        </section>
+
+        <section id="galeria" class="galeria">
+            <h1>Galeria</h1>
+            <ul class="galeria-imagenes"></ul>
+        </section>
+
+        <section id="trailer" class="trailer">
+            <h1>Trailers</h1>
+            <div class="trailer">
+                <div class="contenedor-trailer">
+                    <article>
+                        <h4>PlayStation Experience 2016: Reveal Trailer</h4>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/W2Wnvvj33Wo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </article>
+                    <article>
+                        <h4>Teaser Trailer #2</h4>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/UzdNECcio54" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
+                    </article>
+                    <article>
+                        <h4>E3 2018 Gameplay Reveal Trailer</h4>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/btmN-bWwv0A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </article>
+                    <article>
+                        <h4>Release Date Reveal Trailer-State Of Play</h4>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/II5UsqP2JAk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </article>
+                    <article>
+                        <h4>Official Story Trailer</h4>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/vhII1qlcZ4E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </article>
+                    <article>
+                        <h4>Official Extended Commercial</h4>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/TXl9GI1p_Os" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </article>
+                    <article>
+                        <h4>Abby Story Trailer</h4>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/8x3QL0gQQRU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </article>
+                    
+                    
+                    
+                    
+                   
+                    
+                   
+                </div>
+            </div>
+        </section>
     </div>
-    <div class="video">
-        <video id="tlou-video" src="./assets/videos/corto-tlou.mp4" loop="true" autoplay="true" poster="./assets/imagenes/imagen-video.jpg"></video>
-    </div>
-    <div class="noticias"></div>
+    <!-- <footer>
+        <h1>hola</h1>
+    </footer> -->
+
+    <script src="build/js/bundle.js"></script>
 </body>
 
 </html>
